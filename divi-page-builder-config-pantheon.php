@@ -58,7 +58,7 @@ if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ) :
     }
     // is the dir there?
     if ( !is_dir($et_cache_dir ) {
-        mkdir( $et_cache_dir ); 
+        mkdir( "$et_cache_dir" ); 
     }
     /*
         The following works, but does it too often. Will adjust in future iterations. The second boolean set to true so it does not fire.
